@@ -5,6 +5,17 @@ const typeDefs = gql`
     _id: ID
     username: String
     email: String
+    age: String
+    education: String
+    relationship: String
+    salary: String
+    education: String
+  }
+
+  type Poll {
+    _id: ID
+    vote: String 
+    user: [User]
   }
 
   type Auth {
@@ -15,6 +26,7 @@ const typeDefs = gql`
   type Query {
     users: [User]
     user(username: String!): User
+    poll: [Poll]
   }
 
   type Mutation {

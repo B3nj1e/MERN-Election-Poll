@@ -47,6 +47,19 @@ const electionPollSchema = new Schema ({
 
 });
 
+electionPollSchema.pre('save', async function (next) {
+  if (this.isNew || this.isModified('password')) {
+    const saltRounds = 10;
+    this.password = await bcrypt.hash(this.password, saltRounds);
+  }
+
+  next();
+});
+
+electionPollSchema.methods.isCorrectPassword = async function (password) {
+  return bcrypt.compare(password, this.password);
+};
+
 const electionPoll = model('electionPoll', electionPollSchema);
 
 module.exports = electionPoll;
