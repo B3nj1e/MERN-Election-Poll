@@ -19,6 +19,21 @@ const userSchema = new Schema({
     required: true,
     minlength: 5,
   },
+  age: {
+    // array from drop down list
+  },
+  education: {
+    // array from drop down list
+  },
+  relationship: {
+    // array from drop down list
+  },
+  salary: {
+    // array from drop down list
+  },
+  location: {
+    // array from drop down list
+  }
 });
 
 userSchema.pre('save', async function (next) {
