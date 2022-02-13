@@ -1,5 +1,5 @@
 {
-  "name": "MERN-Election-Poll",
+  "name": "mern-election-poll",
   "version": "1.0.0",
   "description": "",
   "main": "server/server.js",
