@@ -9,7 +9,6 @@ const typeDefs = gql`
     education: String
     relationship: String
     salary: String
-    education: String
     vote: String
   }
 

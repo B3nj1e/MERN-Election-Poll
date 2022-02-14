@@ -1,22 +1,46 @@
 [
   {
-    "username": "elliot",
-    "email": "elliot@email.com",
-    "password": "password01"
+    "username": "fred", 
+    "email": "ben@email.com",
+    "password": "password01",
+    "age": 30,
+    "education": "high school",
+    "relationship": "single",
+    "salary": "1,000,000",
+    "location": "Walhalla",
+    "vote": "me"
   },
   {
     "username": "dory",
     "email": "dory@email.com",
-    "password": "password01"
+    "password": "password01",
+    "age": 50,
+    "education": "high school",
+    "relationship": "single",
+    "salary": "1,000,000",
+    "location": "Walhalla",
+    "vote": "me"
   },
   {
     "username": "drew",
     "email": "drew@email.com",
-    "password": "password01"
+    "password": "password01",
+    "age": 20,
+    "education": "high school",
+    "relationship": "single",
+    "salary": "1,000,000",
+    "location": "Walhalla",
+    "vote": "me"
   },
   {
     "username": "portia",
     "email": "portia@email.com",
-    "password": "password01"
+    "password": "password01",
+    "age": 35,
+    "education": "high school",
+    "relationship": "single",
+    "salary": "1,000,000",
+    "location": "Walhalla",
+    "vote": "me"
   }
 ]

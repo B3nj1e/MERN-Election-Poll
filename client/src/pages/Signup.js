@@ -11,6 +11,12 @@ const Signup = () => {
     username: '',
     email: '',
     password: '',
+    age: '',
+    education: '',
+    relationship: '',
+    salary: '',
+    location: '',
+    vote: '',
   });
   const [addUser, { error, data }] = useMutation(ADD_USER);
 
@@ -73,6 +79,54 @@ const Signup = () => {
                   name="password"
                   type="password"
                   value={formState.password}
+                  onChange={handleChange}
+                />
+                <input
+                  className="form-input"
+                  placeholder="Your Age"
+                  name="age"
+                  type="text"
+                  value={formState.age}
+                  onChange={handleChange}
+                />
+                <input
+                  className="form-input"
+                  placeholder="Your Education Level"
+                  name="education"
+                  type="text"
+                  value={formState.education}
+                  onChange={handleChange}
+                />
+                <input
+                  className="form-input"
+                  placeholder="Your Relationship Status"
+                  name="relationship"
+                  type="text"
+                  value={formState.relationship}
+                  onChange={handleChange}
+                />
+                <input
+                  className="form-input"
+                  placeholder="Your Salary Range"
+                  name="salary"
+                  type="text"
+                  value={formState.salary}
+                  onChange={handleChange}
+                />
+                <input
+                  className="form-input"
+                  placeholder="Your Location"
+                  name="location"
+                  type="text"
+                  value={formState.location}
+                  onChange={handleChange}
+                />
+                <input
+                  className="form-input"
+                  placeholder="Your Election Vote"
+                  name="vote"
+                  type="text"
+                  value={formState.vote}
                   onChange={handleChange}
                 />
                 <button
