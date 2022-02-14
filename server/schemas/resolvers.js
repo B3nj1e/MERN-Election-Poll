@@ -5,16 +5,16 @@ const { signToken } = require('../utils/auth');
 const resolvers = {
   Query: {
     users: async () => {
-      return User.find().populate('electionPoll');
+      return User.find().populate('Party');
     },
     user: async (parent, { username }) => {
-      return User.findOne({ username }).populate('electionPoll');
+      return User.findOne({ username }).populate('Party');
     },
   },
 
   Mutation: {
-    addUser: async (parent, { username, email, password, age, education, relationshop, salary, location }) => {
-      const user = await User.create({ username, email, password, age, education, relationshop, salary, location });
+    addUser: async (parent, { username, email, password, age, education, relationshop, salary, location, vote }) => {
+      const user = await User.create({ username, email, password, age, education, relationshop, salary, location, vote });
       const token = signToken(user);
       return { token, user };
     },

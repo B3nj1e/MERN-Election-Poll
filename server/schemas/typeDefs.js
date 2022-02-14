@@ -10,12 +10,13 @@ const typeDefs = gql`
     relationship: String
     salary: String
     education: String
+    vote: String
   }
 
-  type Poll {
+  type Party {
     _id: ID
-    vote: String 
-    user: [User]
+    name: String
+    poll: String 
   }
 
   type Auth {
@@ -26,7 +27,7 @@ const typeDefs = gql`
   type Query {
     users: [User]
     user(username: String!): User
-    poll: [Poll]
+    party: [Party]
   }
 
   type Mutation {

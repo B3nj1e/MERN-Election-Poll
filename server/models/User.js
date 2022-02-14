@@ -28,30 +28,31 @@ const userSchema = new Schema({
   education: {
     // array from drop down list on front end
     type: String,
-    enum: ['< Year 10', 'Year 11', 'Year 12', 'Cert II', 'Cert III', 'Cert IV', 'Bachelor', 'Masters', 'PhD'],
     required: true
   },
   relationship: {
     // array from drop down list on front end
     type: String,
-    enum: ['single', 'non-marital relationship', 'married', 'divorced', 'widow', 'prefer not to say'], 
     required: true
   },
   salary: {
     // array from drop down list on front end
     type: String,
-    enum: ['< $50,000', '$50,000 - $100,000', '> $100,0000'],
     required: true
   },
   location: {
     // array from drop down list on front end
     type: String,
-    enum: ['CBD', 'Northern Adelaide', 'Eastern Adelaide', 'Southern Adelaide', 'Western Adelaide', 'Northern SA', 'Eastern SA', 'Southern SA', 'Western SA']
+    required: true
   },
   vote: {
     // array from drop down list on front end
     type: String,
-    enum: ['Greens', 'Liberal', 'Labor', 'National', 'Animal Justice', 'One Nation', 'Independent', 'Advance SA', 'Family First'],
+    // import parties model
+    party: {
+      type: Schema.Types.ObjectId,
+      ref: 'Party'
+    },
     required: true
   }
 });
@@ -72,3 +73,12 @@ userSchema.methods.isCorrectPassword = async function (password) {
 const User = model('User', userSchema);
 
 module.exports = User;
+
+
+// enum: ['Greens', 'Liberal', 'Labor', 'National', 'Animal Justice', 'One Nation', 'Independent', 'Advance SA', 'Family First'],
+
+// enum: ['CBD', 'Northern Adelaide', 'Eastern Adelaide', 'Southern Adelaide', 'Western Adelaide', 'Northern SA', 'Eastern SA', 'Southern SA', 'Western SA']
+
+// enum: ['< $50,000', '$50,000 - $100,000', '> $100,0000'],
+
+// enum: ['< Year 10', 'Year 11', 'Year 12', 'Cert II', 'Cert III', 'Cert IV', 'Bachelor', 'Masters', 'PhD'],
