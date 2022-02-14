@@ -1,20 +1,23 @@
 const { Schema, model } = require('mongoose');
 const bcrypt = require('bcrypt');
 
-const electionPoll = new Schema ({
-  type: String, 
-  // obtain party from event click on box?? or obtain via drop down box array??
-  user: [
-    {
-      type: Schema.Types.ObjectId,
-      ref: 'User'
-    }
-  ]
+const electionPoll = new Schema({
+  vote: {
+    type: String,
+    // obtain party from event click on box?? or obtain via drop down box array??
+    // then match vote with User ID, to them pull data from
+    user: [
+      {
+        type: Schema.Types.ObjectId,
+        ref: 'User'
+      }
+    ]
+  }
 })
 
 // ORRRRRR
 
-const electionPollSchema = new Schema ({
+const electionPollSchema = new Schema({
   liberal: {
 
   },
