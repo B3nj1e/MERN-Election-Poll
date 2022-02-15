@@ -21,9 +21,8 @@ const userSchema = new Schema({
   },
   age: {
     // array from drop down list on front end
-    type: Number,
-    min: [18, 'You are too young to vote'],
-    max: [120, 'You are too old to be alive']
+    type: String,
+    required: true
   },
   education: {
     // array from drop down list on front end

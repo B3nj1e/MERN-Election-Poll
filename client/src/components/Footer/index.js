@@ -25,7 +25,7 @@ const Footer = () => {
           >
             ❤️
           </span>{' '}
-          by Author.
+          by Ben Clewer.
         </h4>
       </div>
     </footer>

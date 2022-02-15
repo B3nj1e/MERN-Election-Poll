@@ -62,9 +62,10 @@ const Signup = () => {
                   placeholder="Your username"
                   name="username"
                   type="text"
-                  value={formState.name}
+                  value={formState.username}
                   onChange={handleChange}
                 />
+                
                 <input
                   className="form-input"
                   placeholder="Your email"
@@ -89,22 +90,45 @@ const Signup = () => {
                   value={formState.age}
                   onChange={handleChange}
                 />
-                <input
+                {/* <input
                   className="form-input"
                   placeholder="Your Education Level"
                   name="education"
                   type="text"
                   value={formState.education}
                   onChange={handleChange}
-                />
-                <input
+                /> */}
+                <div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <label class="input-group-text" for="inputGroupSelect01">Options</label>
+  </div>
+  <select class="custom-select" id="inputGroupSelect01" name="education" value={formState.education} onChange={handleChange}>
+    <option selected>Choose...</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+  </select>
+</div>
+
+<div class="form-group">
+    <label for="exampleFormControlSelect1">Select Relationship</label>
+    <select class="form-control" id="exampleFormControlSelect1" value={formState.relationship} onChange={handleChange} name="relationship">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+  </div>
+                
+                {/* <input
                   className="form-input"
                   placeholder="Your Relationship Status"
                   name="relationship"
                   type="text"
                   value={formState.relationship}
                   onChange={handleChange}
-                />
+                /> */}
                 <input
                   className="form-input"
                   placeholder="Your Salary Range"

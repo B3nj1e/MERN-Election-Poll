@@ -1,8 +1,8 @@
 import { gql } from '@apollo/client';
 
 export const QUERY_USER = gql`
-  query user($username: String!, $email: String!, $age: Number!, $education: String!, $relationship: String!, $salary: String!, $location: String!, $vote: String!) {
-    user(username: $username, email: $email, age: $age, education: $eduation, relationship: $relationship, salary: $salary, location: $location, vote: $vote) {
+  query user($username: String!, $email: String!, $age: String!, $education: String!, $relationship: String!, $salary: String!, $location: String!, $vote: String!) {
+    user(username: $username, email: $email, age: $age, education: $education, relationship: $relationship, salary: $salary, location: $location, vote: $vote) {
       _id
       username
       email
@@ -13,4 +13,10 @@ export const QUERY_USER = gql`
       location
     }
   }
-`;
+`
+
+// export const QUERY_PARTY = gql`
+//   query party()
+// `
+
+;
