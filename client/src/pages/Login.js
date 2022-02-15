@@ -53,7 +53,7 @@ const Login = (props) => {
               </p>
             ) : (
               <form onSubmit={handleFormSubmit}>
-                <input
+                {/* <input
                   className="form-input"
                   placeholder="Your email"
                   name="email"
@@ -68,7 +68,19 @@ const Login = (props) => {
                   type="password"
                   value={formState.password}
                   onChange={handleChange}
-                />
+                /> */}
+
+<div class="form-group">
+                  <label>Email address</label>
+                  <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Email" name="email" value={formState.email}
+                  onChange={handleChange}/>
+                </div>
+
+                <div class="form-group">
+                  <label>Password</label>
+                  <input type="password" class="form-control" placeholder="********" name="password" value={formState.password}
+                  onChange={handleChange}/>
+                </div>
                 <button
                   className="btn btn-block btn-primary"
                   style={{ cursor: 'pointer' }}

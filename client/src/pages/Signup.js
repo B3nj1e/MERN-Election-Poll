@@ -57,7 +57,33 @@ const Signup = () => {
               </p>
             ) : (
               <form onSubmit={handleFormSubmit}>
-                <input
+
+<div class="form-group">
+                  <label>Username</label>
+                  <input type="text" class="form-control" placeholder="Enter a username" name="username" value={formState.username}
+                  onChange={handleChange}/>
+                </div>
+
+                <div class="form-group">
+                  <label>Email address</label>
+                  <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter your email" name="email" value={formState.email}
+                  onChange={handleChange}/>
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+
+                <div class="form-group">
+                  <label>Password</label>
+                  <input type="password" class="form-control" placeholder="enter a password" name="password" value={formState.password}
+                  onChange={handleChange}/>
+                </div>
+
+                <div class="form-group">
+                  <label>Age</label>
+                  <input type="text" class="form-control" placeholder="Enter your age" name="age" value={formState.age}
+                  onChange={handleChange}/>
+                </div>
+
+                {/* <input
                   className="form-input"
                   placeholder="Your username"
                   name="username"
@@ -81,15 +107,15 @@ const Signup = () => {
                   type="password"
                   value={formState.password}
                   onChange={handleChange}
-                />
-                <input
+                /> */}
+                {/* <input
                   className="form-input"
                   placeholder="Your Age"
                   name="age"
                   type="text"
                   value={formState.age}
                   onChange={handleChange}
-                />
+                /> */}
                 {/* <input
                   className="form-input"
                   placeholder="Your Education Level"
