@@ -13,9 +13,9 @@ const Header = () => {
       <div className="container flex-row justify-space-between-lg justify-center align-center">
         <div>
           <Link className="text-light" to="/">
-            <h1 className="m-0">Project Name</h1>
+            <h1 className="m-0">2022 SA State Election Poll</h1>
           </Link>
-          <p className="m-0">This is a sub-title</p>
+          <p className="m-0">Sign up to vote in the poll and view the results!</p>
         </div>
         <div>
           {Auth.loggedIn() ? (
