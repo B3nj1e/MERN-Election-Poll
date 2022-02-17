@@ -15,18 +15,23 @@ const Header = () => {
           <Link className="text-light" to="/">
             <h1 className="m-0">2022 SA State Election Poll</h1>
           </Link>
-          <p className="m-0">Sign up to vote in the poll and view the results!</p>
+
         </div>
         <div>
           {Auth.loggedIn() ? (
             <>
-              <span>Hey there, {Auth.getProfile().data.username}!</span>
+              <span>Hey {Auth.getProfile().data.username}!</span>
               <button className="btn btn-lg btn-light m-2" onClick={logout}>
                 Logout
               </button>
+              <Link className="btn btn-lg btn-light m-2" to="/results">
+                Results
+              </Link>
             </>
           ) : (
             <>
+
+              <p className="m-0">Sign up to vote in the poll and view the results!</p>
               <Link className="btn btn-lg btn-info m-2" to="/login">
                 Login
               </Link>
