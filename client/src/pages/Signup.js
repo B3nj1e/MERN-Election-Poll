@@ -160,6 +160,7 @@ const Signup = () => {
                     <option>Married</option>
                     <option>Divorced</option>
                     <option>Widow/widower</option>
+                    <option>Other</option>
                   </select>
                 </div>
 
@@ -223,9 +224,15 @@ const Signup = () => {
                   <label>Vote for your preferred party</label>
                   <select className="form-control" value={formState.vote} onChange={handleChange} name="vote">
                     <option>select vote</option>
-                    <option>A</option>
-                    <option>B</option>
-                    <option>C</option>
+                    <option>Greens</option>
+                    <option>Liberal</option>
+                    <option>Labor</option>
+                    <option>National</option>
+                    <option>Animal Justice</option>
+                    <option>One Nation</option>
+                    <option>Independent</option>
+                    <option>Advance SA</option>
+                    <option>Family First</option>
                   </select>
                 </div>
                 <button

@@ -48,10 +48,10 @@ const userSchema = new Schema({
     // array from drop down list on front end
     type: String,
     // import parties model
-    party: {
-      type: Schema.Types.ObjectId,
-      ref: 'Party'
-    },
+    // party: {
+    //   type: Schema.Types.ObjectId,
+    //   ref: 'Party'
+    // },
     required: true
   }
 });

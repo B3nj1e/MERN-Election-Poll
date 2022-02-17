@@ -4,43 +4,43 @@
     "email": "ben@email.com",
     "password": "password01",
     "age": 30,
-    "education": "high school",
-    "relationship": "single",
-    "salary": "1,000,000",
-    "location": "Walhalla",
-    "vote": "me"
+    "education": "PhD",
+    "relationship": "Single",
+    "salary": "less than $50,000",
+    "location": "CBD",
+    "vote": "Animal Justice"
   },
   {
     "username": "dory",
     "email": "dory@email.com",
     "password": "password01",
     "age": 50,
-    "education": "high school",
-    "relationship": "single",
-    "salary": "1,000,000",
-    "location": "Walhalla",
-    "vote": "me"
+    "education": "Bachelor/Degree",
+    "relationship": "Married",
+    "salary": "$50,000-$100,000",
+    "location": "Southern Adelaide",
+    "vote": "Labor"
   },
   {
     "username": "drew",
     "email": "drew@email.com",
     "password": "password01",
     "age": 20,
-    "education": "high school",
-    "relationship": "single",
-    "salary": "1,000,000",
-    "location": "Walhalla",
-    "vote": "me"
+    "education": "Cert III",
+    "relationship": "De Facto",
+    "salary": "less than $50,000",
+    "location": "Western SA",
+    "vote": "Greens"
   },
   {
     "username": "portia",
     "email": "portia@email.com",
     "password": "password01",
     "age": 35,
-    "education": "high school",
-    "relationship": "single",
-    "salary": "1,000,000",
-    "location": "Walhalla",
-    "vote": "me"
+    "education": "Cert III",
+    "relationship": "Married",
+    "salary": "more than $100,000",
+    "location": "Southern Adelaide",
+    "vote": "Liberal"
   }
 ]

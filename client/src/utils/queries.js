@@ -11,6 +11,7 @@ export const QUERY_USER = gql`
       relationship
       salary
       location
+      vote
     }
   }
 `
@@ -26,6 +27,7 @@ export const QUERY_ALL_USERS = gql`
       relationship
       salary
       location
+      vote
     }
   }
 `
