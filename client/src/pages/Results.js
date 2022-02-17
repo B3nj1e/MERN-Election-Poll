@@ -2,13 +2,20 @@ import React from 'react';
 import { Redirect } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 
-import { QUERY_USER } from '../utils/queries';
+import { QUERY_ALL_USERS } from '../utils/queries';
 
 import Auth from '../utils/auth';
 
 const Results = () => {
-    const { loading, data } = useQuery(QUERY_USER);
+    const { loading, data } = useQuery(QUERY_ALL_USERS);
     const users = data?.users || [];
+    
+    const age = users.map(user => user.username);
+    const education = users.map(user => user.education);
+    const relationship = users.map(user => user.relationship);
+    const salary = users.map(user => user.salary);
+    const location = users.map(user => user.location);
+    const vote = users.map(user => user.vote);
 
 // if (Auth.loggedIn()) {
 //     return <Redirect to="/results"/>
@@ -25,6 +32,12 @@ if (!users) {
     );
 } else {
     console.log(users);
+    console.log(age);
+    console.log(education);
+    console.log(relationship);
+    console.log(salary);
+    console.log(location);
+    console.log(vote);
 }
 
     return (
@@ -33,7 +46,14 @@ if (!users) {
             <h3>Chart Central</h3>
 
             <p>
-                `{users.username}`
+                {users[3].username}
+                {age}
+                {education}
+                {relationship}
+                {salary}
+                {location}
+                {vote}
+         
             </p>
             
            
