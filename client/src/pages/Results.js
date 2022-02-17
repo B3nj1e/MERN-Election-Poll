@@ -27,6 +27,7 @@ const Results = () => {
     const FFs = users.filter(user => user.vote === "Family First");
 
     const parties = [greens, liberals, labors, nationals, aJustices, inds, aSAs, FFs];
+    const charts = [];
 
     for (const elements of parties) {
         console.log(elements);
@@ -100,16 +101,18 @@ const Results = () => {
         };
 
         const edChart = Chart(educationFrequency, "Education", education);
-        const relChart = Chart([...relationshipFrequency.values()], "Relationship", relationship);
-        const salChart = Chart([...salaryFrequency.values()], "Salary", salary);
-        const locChart = Chart([...locationFrequency.values()], "Relationship", location);
+        const relChart = Chart(relationshipFrequency, "Relationship", relationship);
+        const salChart = Chart(salaryFrequency, "Salary", salary);
+        const locChart = Chart(locationFrequency, "Relationship", location);
 
-         <div>
-            {edChart}
-            {relChart}
-            {salChart}
-            {locChart}
-        </div>
+        charts.push(
+            <div>
+            {edChart},
+            {relChart},
+            {salChart},
+            {locChart},
+            </div>
+        );
 
     };
 
@@ -177,10 +180,12 @@ const Results = () => {
 
                 <h2>Greens</h2>
                 
-
+                <div>
+                {charts}
+                </div>
                 <h5>Education</h5>
                 <div>
-                    {liberals.Edchart}
+                    {/* {Edchart} */}
                 </div>
 
             </div>
