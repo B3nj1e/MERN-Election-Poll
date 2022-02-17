@@ -42,5 +42,27 @@
     "salary": "more than $100,000",
     "location": "Southern Adelaide",
     "vote": "Liberal"
+  },
+  {
+    "username": "Steve",
+    "email": "steve@email.com",
+    "password": "password01",
+    "age": 35,
+    "education": "PhD",
+    "relationship": "Married",
+    "salary": "more than $100,000",
+    "location": "Southern Adelaide",
+    "vote": "Liberal"
+  },
+  {
+    "username": "John",
+    "email": "john@email.com",
+    "password": "password01",
+    "age": 35,
+    "education": "Cert IV",
+    "relationship": "Married",
+    "salary": "more than $100,000",
+    "location": "Southern Adelaide",
+    "vote": "Liberal"
   }
 ]
