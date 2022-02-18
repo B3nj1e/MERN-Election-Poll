@@ -25,7 +25,7 @@ const Footer = () => {
           >
             ❤️
           </span>{' '}
-          by Ben Clewer.
+          by BC.
         </h4>
       </div>
     </footer>

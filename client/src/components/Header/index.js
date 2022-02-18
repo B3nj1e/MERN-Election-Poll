@@ -9,15 +9,15 @@ const Header = () => {
     Auth.logout();
   };
   return (
-    <header className="header bg-danger md-bg-primary text-light mb-4 py-3 flex-row align-center " >
+    <header className="bg-danger text-light mb-4 py-3 flex-row align-center " >
       <div className="container flex-row justify-space-between-lg justify-center align-center">
-        <div>
+        <div id="title">
           <Link className="text-light" to="/">
             <h1 className="m-0">2022 SA State Election Poll</h1>
           </Link>
 
         </div>
-        <div>
+        <div id="navbuttons">
           {Auth.loggedIn() ? (
             <>
               <span>Hey {Auth.getProfile().data.username}!</span>
@@ -48,5 +48,7 @@ const Header = () => {
     </header>
   );
 };
+
+
 
 export default Header;
