@@ -1,12 +1,15 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
 
   return (
     <main>
-      <div className="flex-row justify-center">
+      <div className="parent">
+      <div>
         <h1>Sign up to VOTE and see the poll results!</h1>
-        <div id="background"></div>
+        <Link id="background" to="/signup"></Link>
+      </div>
       </div>
     </main>
   );
