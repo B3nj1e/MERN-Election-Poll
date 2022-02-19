@@ -39,12 +39,20 @@
   max-width: 100%;
 }
 
+header {
+  background-color: #d9534f;
+}
+
 @media screen and (max-width: 1030px) {
   #govote {
     display: flex;
     background-image: none;
     height: auto;
     width: auto;
+  }
+
+  header {
+    background-color: #0275d8;
   }
 }
 
@@ -70,7 +78,7 @@
   }
 
   header {
-    background-color: aqua;
+    background-color: #5cb85c;
   }
 
 }
